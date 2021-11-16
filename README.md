@@ -42,3 +42,5 @@ Linux commands in git bash:
 + To create file `touch | vim(open editor)  filename`
 + When you create file using vim editor after writing of code use `:w` to save code and `:q` to exit from the editor
 + To edit file use `nano filename`.It will open nano editor in that write your code.To save and exit nano editor use `ctrl+x` and then click `y` it will goto save mode file path `Filename name to write : filename` and then click on `Enter`.It will go back to project folder.Then see your edited code by `cat filename`
+
++ 
