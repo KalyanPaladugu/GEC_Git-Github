@@ -43,4 +43,21 @@ Linux commands in git bash:
 + When you create file using vim editor after writing of code use `:w` to save code and `:q` to exit from the editor
 + To edit file use `nano filename`.It will open nano editor in that write your code.To save and exit nano editor use `ctrl+x` and then click `y` it will goto save mode file path `Filename name to write : filename` and then click on `Enter`.It will go back to project folder.Then see your edited code by `cat filename`
 
-+ 
++ To remove any file use `rm filename`
++ To remove folder `rm -r foldername`
+
+##Git commands:
+===============
++ First we need to initialize git repositroy by `git init`
++ To see  git folder use `ls -a`(It will show hidden files also)
+
++ Main in git we have 3 areas
+	+ Untracked area(those files(red color files) are not adding to git )
+	+ Staging area (Files(green color) added to git)
+	+ Commit area
++ To check files are tracked or untracked we can use `git status`
++ To check the status of a file use `git status`
++ To add a single file to stage area use `git add filename`
++ To add multiple files to `git add . or git add --all`
++ To move file from staging area to untracked area use `git rm --cached filename`
++ Commit all the files by using `git commit -m "Version1`+ For every commit a SHA(Secure Hash Algorithm) key with 40 characters length will generate to theck that one use `git log`
