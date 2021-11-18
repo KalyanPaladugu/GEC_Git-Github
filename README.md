@@ -94,3 +94,44 @@ Delete commit:
 + To delete specific commit we have to user "git rebase --onto --branchname ~ number to delete the commit branchname ~ number(Head to master is @which commit) to kept branchname "
 + `git rebase --onto master~3(delete first commit(1-commit(delete),2-commit,(3)final-commit:master will head to 3rd commit)) master~1 master`
 
+
+
+### Cloning of Remote repositiory:
+==================================
+
+ + clone
+ 	+ No need to extract
+ + zip
+   + We need to extract zip folder
+
+## Procedure to push prject into central repository:
+=====================================================
+
+1. Initialize git in local repository by using `git init`
+2. Check files status by using `git status`
+3. Add all files to git with help of `git add . or git add --all`
+4. Change to commit area by `git commit -m "Message"`
+5. If it asks tuser.name and email then we have to configure those things by `git config --global user.name "githubusername"` and `git config  --global user.email "githubemail"`
+6. Check username and email once byusing  `git config --global user.name ` and `git config  --global user.email`
+7. Add remote origin from the github repository by using `git remote add origin "url"`
+8. Push the source code in to github by using `git push origin master or git push -u origin master`
+
+
+## Branch:
+==========
+
++ To check number of brances we have to use `git branch`
++ To create new branch use `git branch newbranchname`
++ To change from one brnach to another branch use `git checkout newbranchname`
++ Delete branch in local git
+	+ To delete particular branch after merge  `git branch -d branchname`
+	+ To delete particular branch before merge `git branch -D branchname` 
++ Delete branch in remote
+	+ To delete particular branch in github `git push remotename --delete branchname` 
+	+ Ex: `git push origin --delete kalyan`
++ To merge brach you have to use `git merge newbrachname`.It will add the source code in newbranchname to active branch (master)
+### remote commands:
+====================
++ To check remote mode we have to use `git remote`
++ To change remotename use`git remote origin origin5`
++ To delete any remote `git remote remove remotename`
