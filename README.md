@@ -61,3 +61,36 @@ Linux commands in git bash:
 + To add multiple files to `git add . or git add --all`
 + To move file from staging area to untracked area use `git rm --cached filename`
 + Commit all the files by using `git commit -m "Version1`+ For every commit a SHA(Secure Hash Algorithm) key with 40 characters length will generate to theck that one use `git log`
++ if it is asking tell me who you are? like this we have to configure git with username and email
+
+Configurations:
+===============
++ We have to configure git by providing username and email globally(better to use github logins)
++ git config --global user.name "Username"
++ git config --global user.email "your email"
+
+
++ If we want check particulr n-commit data we have to use first seven chareacters of a SHA key. For that use `git log --oneline`
++ We can check the files in first commit by using SHA key with command of `git checkout xxxxxxx`(first 7characters of SHA key).Which means we can get the data at the first commit.Similary we can get the data @ nth position commit
+
++ After switch to particular commit you can update data and then commit finalupdated data.
++ To check the number of commits ` git rev-list --count HEAD`
+
+Note:
+=====
+```In case if you updated data with new commit if you want to continue with coomit create new branch with those commit by usning `git branch branchname xxxxxxx(sha key).```
+
+
++ Then switch to master branch by using `git checkout master` 
+
+Change commit message:
+----------------------
++ To change latest commit message use `git commit --amend -m "updated".To change commit message when head-->master is possible`
+
+Delete commit:
+--------------
++ To delete latest commit use `git reset HEAD^`.If you want to delete with data with commit use `git reset --hard Head^`
++ To delete number of commits use `git reset --hard HEad~2` here i want to delete 2 latest commits
++ To delete specific commit we have to user "git rebase --onto --branchname ~ number to delete the commit branchname ~ number(Head to master is @which commit) to kept branchname "
++ `git rebase --onto master~3(delete first commit(1-commit(delete),2-commit,(3)final-commit:master will head to 3rd commit)) master~1 master`
+
