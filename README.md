@@ -1,5 +1,6 @@
 # GEC_Git_Offline
 
+
 Git:
 ====
 + Downloas Git from https://git-scm.com/downloads
@@ -159,3 +160,59 @@ Delete commit:
 ================
 
 + People who added by m owner they can able to modify files(add/delete) but not delete the project 
+
+# Heading1
+## Heding2
+### Heading3
+#### Heading4
+##### Heading5
+###### Heading6
+
+### List
+
++ Unordered list
++ Ordered list
+##### Unordered list
+
++ Web Technologies
+    - HTML5
+    - CSS3
+    - JavaScript
+
+##### Ordered list
+
++ Backend Technlogies
+    1. Java
+    2. PHP
+    3. Python
+
+*This is text*
+**Text with bold**
+***Text with bold and italic***
+> Quote
++ Git command `git init`
+
+- Code 
+```
+function demo(){
+    return 4
+    }
+```
+
+![logo](https://c4.wallpaperflare.com/wallpaper/736/96/920/beautiful-unicorn-in-forest-fantasy-computer-desktop-wallpapers-hd-2560%C3%971600-wallpaper-preview.jpg)
+
+[Github](https://github.com/KalyanPaladugu/GEC_Git-Github/edit/main/README.md)
+
+#### Table
+
+S.No | Name of the Student | Age
+------|-------------------|-----
+1     | Haritha           | 20
+2     | Suresh            |  30
+
+
+:smile: Happy to learn
+
+
+    
+
