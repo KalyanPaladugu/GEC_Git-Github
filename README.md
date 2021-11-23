@@ -1,3 +1,5 @@
+# GEC_Git_Offline
+
 Git:
 ====
 + Downloas Git from https://git-scm.com/downloads
@@ -42,9 +44,9 @@ Linux commands in git bash:
 + To create file `touch | vim(open editor)  filename`
 + When you create file using vim editor after writing of code use `:w` to save code and `:q` to exit from the editor
 + To edit file use `nano filename`.It will open nano editor in that write your code.To save and exit nano editor use `ctrl+x` and then click `y` it will goto save mode file path `Filename name to write : filename` and then click on `Enter`.It will go back to project folder.Then see your edited code by `cat filename`
-
 + To remove any file use `rm filename`
 + To remove folder `rm -r foldername`
++ To move all files at a time `git rm -r cached .`
 
 ##Git commands:
 ===============
@@ -61,6 +63,7 @@ Linux commands in git bash:
 + To add multiple files to `git add . or git add --all`
 + To move file from staging area to untracked area use `git rm --cached filename`
 + Commit all the files by using `git commit -m "Version1`+ For every commit a SHA(Secure Hash Algorithm) key with 40 characters length will generate to theck that one use `git log`
+
 + if it is asking tell me who you are? like this we have to configure git with username and email
 
 Configurations:
@@ -93,7 +96,6 @@ Delete commit:
 + To delete number of commits use `git reset --hard HEad~2` here i want to delete 2 latest commits
 + To delete specific commit we have to user "git rebase --onto --branchname ~ number to delete the commit branchname ~ number(Head to master is @which commit) to kept branchname "
 + `git rebase --onto master~3(delete first commit(1-commit(delete),2-commit,(3)final-commit:master will head to 3rd commit)) master~1 master`
-
 
 
 ### Cloning of Remote repositiory:
@@ -135,3 +137,25 @@ Delete commit:
 + To check remote mode we have to use `git remote`
 + To change remotename use`git remote origin origin5`
 + To delete any remote `git remote remove remotename`
+
+### Fork:
+=========
++ To copy from remote to remote(copy one github account project to another github account)
+
+### contribute:
+===============
++ Add changes to fork project locally and contribute to owner
+
+
+### Steps to contribute:
+-------------------------
+1. Fork the repository
+2. Clone the repository
+3. Create a new branch and add changes to the source code
+4. Push the changes to remote
+5. Compare & pull request
+
+### Collaborate:
+================
+
++ People who added by m owner they can able to modify files(add/delete) but not delete the project 
